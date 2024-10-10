@@ -34,8 +34,7 @@ export default function QueryProcessor(query: string): string {
     if(addMatch){
       const x: number = parseInt(addMatch[1]);
       const y: number = parseInt(addMatch[2]);
-      const z: number = parseInt(addMatch[2]);
-      return Math.max(x,y,z).toString();
+      return (x+y).toString();
     }
     return (
       "not match"
