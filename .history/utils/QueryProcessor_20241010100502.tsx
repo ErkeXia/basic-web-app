@@ -18,14 +18,9 @@ export default function QueryProcessor(query: string): string {
   }
 
   if (query.toLowerCase().includes("plus")) {
-    const addMatch = query.match(/What is (\d+) plus (\d+)/);
-    if(addMatch){
-      const x: number = parseInt(addMatch[1]);
-      const y: number = parseInt(addMatch[2]);
-      return (x+y).toString();
-    }
+    const addMatch = query.split("plus")
     return (
-      "not match"
+      "Jason"
     );
   }
 
