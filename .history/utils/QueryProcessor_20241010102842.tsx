@@ -25,12 +25,6 @@ export default function QueryProcessor(query: string): string {
       const y: number = parseInt(addMatch[2]);
       return (x+y).toString();
     }
-    if(addMatch2){
-      const x: number = parseInt(addMatch2[1]);
-      const y: number = parseInt(addMatch2[2]);
-      const z: number = parseInt(addMatch2[3]);
-      return (x+y+z).toString();
-    }
     return (
       "not match"
     );
